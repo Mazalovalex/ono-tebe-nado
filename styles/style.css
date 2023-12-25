@@ -3,7 +3,7 @@
 /*  ********************* Header ************************* */
 
 .header {
-  margin: 90px 24px 93px 24px;
+  margin: 91px 24px 92px 24px;
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
   grid-template-areas: "header__menu header__logo header__address";
@@ -55,6 +55,7 @@
 }
 
 .header__address {
+	padding-top: 1px;
   padding-right: 32px;
   place-self: center end;
   grid-area: header__address;
@@ -185,7 +186,7 @@
 /*  ********************* Второй экран ************************* */
 
 .lots {
-  margin: 176px 31px 177px;
+  margin: 176px 33px 177px;
 }
 
 .lots__heading {
@@ -209,14 +210,14 @@
 }
 
 .lots__card-list-item {
-  width: 327px;
+  width: 328px;
   height: 554px;
   background-color: grey;
   flex-grow: 1;
 }
 
 .lots__card-list-item-center {
-  width: 329px;
+  width: 328px;
   height: 554px;
   background-color: grey;
   flex-grow: 1;
