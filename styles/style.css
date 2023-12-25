@@ -27,6 +27,7 @@
 }
 .links-text-decoration {
   text-underline-offset: 4px;
+	text-decoration-thickness: 1px;
 }
 
 .header__link {
@@ -277,7 +278,7 @@
 }
 
 .lots__look-more-link {
-  padding-left: 39px;
+  padding-left: 40px;
   color: #000;
   font-size: 20px;
   font-style: normal;
