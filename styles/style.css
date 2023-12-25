@@ -10,17 +10,17 @@
 }
 
 .header__menu {
-  grid-area: header__menu;
   padding-left: 34px;
   display: flex;
   align-items: center;
+  grid-area: header__menu;
 }
 
 .header__links-list {
-  align-self: center;
-  display: flex;
   width: 388px;
   height: 23px;
+  align-self: center;
+  display: flex;
   justify-content: space-between;
   align-items: baseline;
   list-style: none;
@@ -47,16 +47,16 @@
 }
 
 .header__logo {
-  grid-area: header__logo;
   width: 148px;
   height: 105px;
+  grid-area: header__logo;
   justify-self: center;
 }
 
 .header__address {
-  grid-area: header__address;
-  place-self: center end;
   padding-right: 32px;
+  place-self: center end;
+  grid-area: header__address;
 }
 
 .header__address-list {
@@ -80,30 +80,30 @@
 
 .cover {
   position: relative;
-  background-image: url(/ono-tebe-nado/images/cover.jpg);
+  margin: 0 9px 18px;
+  background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 9px 18px;
 }
 
 .overlay {
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #000;
-  opacity: 0.6;
   height: 100%;
   width: 100%;
-  z-index: 0;
+  background-color: #000;
+  opacity: 0.6;
 }
 
 .cover__title {
-  color: #fff;
   position: relative;
+  padding: 162px 49px 118px 47px;
   display: flex;
   flex-direction: column;
-  padding: 162px 49px 118px 47px;
+  color: #fff;
   font-size: 100px;
   font-weight: 700;
   line-height: 1.15;
@@ -112,8 +112,8 @@
 }
 
 .aligned-text {
-  align-self: start;
   padding-bottom: 10px;
+  align-self: start;
 }
 
 .letter-spacing-extended-ono {
@@ -121,9 +121,9 @@
 }
 
 .aligned-text_center {
-  align-self: end;
   padding-right: 309px;
   padding-bottom: 4px;
+  align-self: end;
 }
 
 .letter-spacing-extended-tebe {
@@ -131,8 +131,8 @@
 }
 
 .aligned-text_right {
-  align-self: end;
   padding-bottom: 5px;
+  align-self: end;
 }
 
 .letter-spacing-extended-nado {
@@ -144,38 +144,39 @@
 }
 
 .cover__description {
-  display: flex;
-  justify-content: end;
-  align-items: center;
   position: relative;
   padding-right: 48px;
   padding-bottom: 49px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .cover__description-text {
+  z-index: 1;
+  padding-right: 68px;
   color: #fff;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.27;
   text-transform: uppercase;
-  z-index: 1;
-  padding-right: 68px;
   word-spacing: 18px;
 }
 
 .bet-button {
+  padding: 12px 30px;
+  text-align: center;
   color: #fff;
   border: 1px solid #fff;
   background-color: transparent;
-  padding: 12px 30px;
-  text-align: center;
   font-family: "Raleway";
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /*  ********************* Второй экран ************************* */
@@ -187,36 +188,36 @@
 }
 
 .lots__heading {
+  padding-left: 37px;
+  padding-bottom: 27px;
   color: #000;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-  padding-left: 37px;
-  padding-bottom: 27px;
 }
 
 .lots__card-list {
+  position: relative;
+  padding-bottom: 29px;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   list-style: none;
-  padding-bottom: 29px;
-  position: relative;
 }
 
 .lots__card-list-item {
-  background-color: grey;
   width: 327px;
   height: 554px;
+  background-color: grey;
   flex-grow: 1;
 }
 
 .lots__card-list-item-center {
-  background-color: grey;
   width: 329px;
   height: 554px;
+  background-color: grey;
   flex-grow: 1;
 }
 
@@ -226,35 +227,37 @@
 
 .card {
   position: relative;
+  padding: 48px 35px 46px 39px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 48px 35px 46px 39px;
-  height: 100%;
 }
 
 .card_type_film {
-  background-image: url(/ono-tebe-nado/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card_type_book {
-  background-image: url(/ono-tebe-nado/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card_type_picture {
-  background-image: url(/ono-tebe-nado/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
 }
 
 .card__title {
+  z-index: 1;
+  justify-content: start;
   color: #fff;
   font-size: 22px;
   font-style: normal;
@@ -262,26 +265,24 @@
   line-height: 1.2;
   text-decoration-line: underline;
   text-transform: uppercase;
-  z-index: 1;
-  justify-content: start;
 }
 
 .card__text {
+  z-index: 1;
   color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
-  z-index: 1;
 }
 
 .lots__look-more-link {
+  padding-left: 39px;
   color: #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left: 39px;
 }
 
 /*  ********************* Третий экран ************************* */
@@ -289,9 +290,9 @@
 /*  ********************* Третий экран ************************* */
 
 .about {
+  margin: 0 9px;
   display: flex;
   gap: 25px;
-  margin: 0 9px;
 }
 
 .about__logo {
