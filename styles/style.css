@@ -19,8 +19,8 @@
 .header__links-list {
   width: 388px;
   height: 23px;
+	display: flex;
   align-self: center;
-  display: flex;
   justify-content: space-between;
   align-items: baseline;
   list-style: none;
