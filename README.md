@@ -1,1 +1,1 @@
-https://github.com/Mazalovalex/ono-tebe-nado.git
+https://github.com/Mazalovalex/ono-tebe-nado
