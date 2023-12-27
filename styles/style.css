@@ -11,14 +11,14 @@
 
 .header__menu {
   padding-left: 34px;
-  display: flex;
-  align-items: center;
   grid-area: header__menu;
+  display: flex;
 }
 
 .header__links-list {
-  width: 388px;
   display: flex;
+  width: 388px;
+  align-items: center;
   justify-content: space-between;
   list-style: circle;
 }
@@ -27,11 +27,11 @@
   list-style: none;
 }
 
-.header__link_active {
+.link_active {
   text-decoration: none;
 }
 
-.header__link {
+.link {
   color: #000;
   font-size: 18px;
   line-height: 1.35;
@@ -59,7 +59,7 @@
   place-self: center end;
 }
 
-.header__address-text {
+.link-text {
   font-size: 18px;
   line-height: 1.35;
   color: #000;
@@ -112,17 +112,9 @@
   align-self: start;
 }
 
-.letter-spacing-extended-first-line {
-  letter-spacing: 0.6em;
-}
-
 .aligned-text_center {
   padding-bottom: 4px;
   align-self: center;
-}
-
-.letter-spacing-extended-second-line {
-  letter-spacing: 0.57em;
 }
 
 .aligned-text_right {
@@ -130,8 +122,8 @@
   align-self: end;
 }
 
-.letter-spacing-extended-third-line {
-  letter-spacing: 0.56em;
+.letter-spacing {
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
@@ -195,7 +187,7 @@
 
 .lots__card-list {
   position: relative;
-  padding-bottom: 29px;
+  padding-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
@@ -204,7 +196,7 @@
 
 .lots__card-list-item {
   width: 328px;
-  min-height: 554px; /* когда высота контейнера была фиксированной height, PP сходился хорошо, когда я ставлю min, то контейнер уменьшается на 5px в высоту */
+  min-height: 554px;
   background-color: grey;
   flex-grow: 1;
 }
@@ -320,14 +312,28 @@
   margin: 179px 58px 89px;
 }
 
-.address {
+.footer__address {
   display: grid;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__social-list {
   display: flex;
   gap: 47px;
   list-style: none;
+}
+
+.footer__link {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footer__social-icon {
@@ -337,16 +343,4 @@
 
 .footer__menu-list {
   list-style: none;
-}
-.footer__menu-list-item {
-  color: #000;
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.footer__menu-link_active {
-  text-decoration: none;
 }
