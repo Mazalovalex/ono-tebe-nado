@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-https://github.com/Mazalovalex/ono-tebe-nado.git
-=======
-Добрый день.
+# ono-tebe-nado
 
-https://github.com/Mazalovalex/ono-tebe-nado
->>>>>>> 2537f162621b9f0eab6e6a4bf7ffbe4c4e101804
+Ссылки:
+
+- Репозиторий проекта: https://github.com/Mazalovalex/ono-tebe-nado
